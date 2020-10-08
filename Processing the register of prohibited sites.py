@@ -28,7 +28,7 @@ site_info = [['URL', urls], ['domain', domain], ['IP', IPs]]
 
 buf = open("D:/register.txt", "r", encoding='utf-8').readlines()
 for i in buf:
-    line = i[0:len(i) - 2].split(";")  # убераем /n
+    line = i[0:len(i) - 2].split(";")  # избавляемся от /n
     urls.append(line[1].split(','))
     domain.append(line[2].split(','))
     IPs.append(line[3].split(','))
